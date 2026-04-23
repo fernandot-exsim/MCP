@@ -2,7 +2,10 @@
   "name": "mongo-mcp-railway-demo",
   "version": "1.0.0",
   "private": true,
+  "dependencies": {
+    "mongodb-mcp-server": "latest"
+  },
   "scripts": {
-    "start": "MDB_MCP_HTTP_PORT=${PORT:-3000} npx -y mongodb-mcp-server@latest --transport http --httpHost=0.0.0.0 --readOnly --indexCheck"
+    "start": "mongodb-mcp-server --transport http --readOnly --indexCheck"
   }
 }
