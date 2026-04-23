@@ -6,6 +6,6 @@
     "mongodb-mcp-server": "latest"
   },
   "scripts": {
-    "start": "mongodb-mcp-server --transport http --readOnly --indexCheck"
+    "start": "mongodb-mcp-server --transport http --readOnly"
   }
 }
